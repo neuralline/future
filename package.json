@@ -1,0 +1,16 @@
+{
+  "name": "future-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Darik Hart",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "parcel": "^1.11.0"
+  }
+}
