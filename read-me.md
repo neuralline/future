@@ -1,4 +1,4 @@
-test 1 runs in node: command=> node src/test-1js
+test 1 runs in node terminal: command=> node test-1/test-1.js
 
 test 2 command=> yarn start
 

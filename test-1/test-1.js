@@ -9,7 +9,7 @@ const isPrime = num => {
 const fizzBuzz = (max = 0) => {
   const log = [];
   for (let i = 1; i < max; i++) {
-    let divisible = i + "";
+    let divisible = "";
     if (i % 3 === 0 && i % 5 === 0) {
       divisible = "FIZZBUZZ";
     } else if (i % 3 === 0) {
@@ -20,9 +20,9 @@ const fizzBuzz = (max = 0) => {
       divisible = "FiZZBUZZ++";
     }
     console.log(i + ":" + divisible);
-    log.push([i, divisible, "\n"]);
+    log.push("\n" + i + ":" + divisible);
   }
-  return log.join() + "\n";
+  return log.join();
 };
 
 fs.appendFile("fizzbuzz.log", fizzBuzz(500), err => {
